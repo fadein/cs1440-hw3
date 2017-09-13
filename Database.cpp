@@ -3280,8 +3280,9 @@ Employment all_industries[] = {
 	Employment ("78010", 1295, 14374, 583765877),
 	Employment ("78020", 300, 2407, 86959709),
 	Employment ("78030", 1802, 21379, 848284929),
-	Employment ("END", 0, 0, 0),
 };
+
+const int all_industries_len = sizeof(all_industries) / sizeof(Employment); 
 
 
 Employment software_publishing[] = {
