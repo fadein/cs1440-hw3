@@ -1,4 +1,7 @@
-# This data comes from the US Federal Gov't Bureau of Labor and Statistics
+# This message is brought to you by the number 1
+
+Employment and wage data courtesy the US Federal Government Bureau of Labor and
+Statistics
 
 * https://www.bls.gov/cew/datatoc.htm
 * https://data.bls.gov/cew/doc/titles/industry/industry_titles.htm
@@ -30,5 +33,11 @@ Write comparators to use with the qsort() function (#include <cstdlib>) to sort
 the datasets on the following keys:
 
 1. Employment
-** on the numeric values
-** by the fips area codes
+  * on the numeric values
+  * by the fips area codes
+
+2. Area
+  * by the fips area codes
+
+You will demonstrate that the arrays are sorted by printing the first and last
+5 elements of the arrays.
