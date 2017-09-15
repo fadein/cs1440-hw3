@@ -1,4 +1,4 @@
-# This message is brought to you by the number 1
+# This message is brought to you by the number 01010101 01010011 01000001
 
 Employment and wage data courtesy the US Federal Government Bureau of Labor and
 Statistics
@@ -12,32 +12,34 @@ Statistics
 
 ## Crunching Numbers
 
-Compute the following statistics on both the national aggregate data as well as
-the software publishing industry data:
+Compute the following statistics on both the 0) national aggregate data as well
+as the 1) software publishing industry data:
 
-* Mean annual salary
-* Standard Deviation of salaries
-* Top 10 annual salaries, displayed with human-recognizable Area Title
-* Bottom 10 annual salaries, displayed with human-recognizable Area Title
-* Median annual salary, displayed with human-recognizable Area Title
-* Mode of annual salaries, along with the number of areas representing that value
+* Standard Deviation of salaries across all FIPS areas
+* Top 10 FIPS areas by annual wages, displayed in human-recognizable Area Titles
+* Bottom 10 FIPS areas by annual wages, displayed in human-recognizable Area Titles
+* Top 10 FIPS areas by annual average number of establishments, displayed in human-recognizable Area Titles
+* Bottom 10 FIPS areas by annual average number of establishments, displayed in human-recognizable Area Titles
+* Top 10 FIPS areas by annual average number of employees, displayed in human-recognizable Area Titles
+* Bottom 10 FIPS areas by annual average number of employees, displayed in human-recognizable Area Titles
+* The median annual salary and its assoiated FIPS Area Title
+* The mode of annual salaries, along with the number of areas representing that value
 * Number of unique salaries in the dataset
+
 
 ## Sorting things out
 
-It will be easier to compute some of the required statistics if you first sort
-the datasets. Besides, I just want you to sort these arrays in a few different
-ways.
+It will be easier to compute some of the above statistics if you first sort the
+datasets.
 
 Write comparators to use with the qsort() function (#include <cstdlib>) to sort
 the datasets on the following keys:
 
-1. Employment
-  * on the numeric values
-  * by the fips area codes
+0. Employment
+  * area_fips
+  * annual_avg_estabs
+  * annual_avg_emplvl
+  * total_annual_wages
 
-2. Area
-  * by the fips area codes
-
-You will demonstrate that the arrays are sorted by printing the first and last
-5 elements of the arrays.
+Demonstrate that the arrays are sorted by printing the first and last 5
+elements of the arrays.
