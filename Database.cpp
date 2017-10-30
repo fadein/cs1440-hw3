@@ -8,6 +8,10 @@
  *
  *    https://data.bls.gov/cew/data/files/2016/csv/2016_annual_singlefile.zip
  */
+const int software_publishing_len = sizeof(software_publishing) / sizeof(Employment);
+const int all_industries_len = sizeof(all_industries) / sizeof(Employment); 
+const int fips_areas_len = sizeof(fips_areas) / sizeof(Area); 
+
 Employment all_industries[] = {
 	Employment ("01001", 860, 10739, 390543141),
 	Employment ("01003", 5822, 70107, 2405999881),
@@ -3279,11 +3283,8 @@ Employment all_industries[] = {
 	Employment ("72999", 273, 1938, 99610015),
 	Employment ("78010", 1295, 14374, 583765877),
 	Employment ("78020", 300, 2407, 86959709),
-	Employment ("78030", 1802, 21379, 848284929),
+	Employment ("78030", 1802, 21379, 848284929)
 };
-
-const int all_industries_len = sizeof(all_industries) / sizeof(Employment); 
-
 
 Employment software_publishing[] = {
 	Employment ("01001", 2, 0, 0),
@@ -4436,10 +4437,8 @@ Employment software_publishing[] = {
 	Employment ("72069", 2, 0, 0),
 	Employment ("72119", 1, 0, 0),
 	Employment ("72127", 4, 15, 791235),
-	Employment ("72999", 1, 0, 0),
-	Employment ("END", 0, 0, 0),
+	Employment ("72999", 1, 0, 0)
 };
-
 
 Area fips_areas[] = {
 	Area ("C3168", "Malvern, AR MicroSA"),
@@ -9163,6 +9162,5 @@ Area fips_areas[] = {
 	Area ("08035", "Douglas County, Colorado"),
 	Area ("47067", "Hancock County, Tennessee"),
 	Area ("C2826", "Kearney, NE MicroSA"),
-	Area ("34996", "Overseas Locations -- New Jersey"),
-	Area ("END", ""),
+	Area ("34996", "Overseas Locations -- New Jersey")
 };
